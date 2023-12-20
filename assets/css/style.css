@@ -9,3 +9,6 @@ body {
     padding-right: 25px; /* Настройте необходимый внутренний отступ */
   }
 }
+h3 {
+  text-align: center;
+}
