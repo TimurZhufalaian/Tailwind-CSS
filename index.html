@@ -9,65 +9,63 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
+
 <body class="flex flex-col min-h-screen">
 
-  <!-- Навігаційна панель -->
-  <nav class="bg-gray-800 p-4">
+  <!-- Навігаційне меню -->
+  <nav class="bg-gray-800 text-white p-4">
     <div class="container mx-auto flex justify-between items-center">
       <div class="text-white font-bold text-xl">Мій сайт</div>
       <ul class="text-white">
         <li class="inline-block mr-4"><a href="#" class="hover:text-gray-300">Головна</a></li>
-        <li class="inline-block mr-4"><a href="#" class="hover:text-gray-300">Про нас</a></li>
+        <li class="inline-block mr-4"><a href="#" class="hover:text-gray-300">Продукти</a></li>
+        <li class="inline-block mr-4"><a href="#" class="hover:text-gray-300">Послуги</a></li>
         <li class="inline-block mr-4"><a href="#" class="hover:text-gray-300">Контакти</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Головний контент -->
-  <div class="container mx-auto my-8">
+  <!-- Банер -->
+  <section class="bg-blue-500 text-white py-20">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold mb-4">Ласкаво просимо на наш сайт!</h1>
+      <p class="text-lg">Надзвичайно корисна інформація для вас.</p>
+    </div>
+  </section>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Картки з контентом -->
-      <div class="bg-white p-4 rounded shadow-md">
-        <h2 class="text-lg font-bold mb-2">Заголовок 1</h2>
+  <!-- Блоки вмісту -->
+  <section class="container mx-auto mt-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+        <h2 class="text-xl font-bold mb-2">Розділ 1</h2>
         <p class="text-gray-700">Опис першого блоку контенту.</p>
       </div>
-      <div class="bg-white p-4 rounded shadow-md">
-        <h2 class="text-lg font-bold mb-2">Заголовок 2</h2>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+        <h2 class="text-xl font-bold mb-2">Розділ 2</h2>
         <p class="text-gray-700">Опис другого блоку контенту.</p>
       </div>
-      <div class="bg-white p-4 rounded shadow-md">
-        <h2 class="text-lg font-bold mb-2">Заголовок 3</h2>
-        <p class="text-gray-700">Опис третього блоку контенту.</p>
+    </div>
+  </section>
+
+  <!-- Галерея зображень -->
+  <section class="container mx-auto mt-8 mb-8">
+    <h2 class="text-2xl font-bold mb-4">Галерея</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="overflow-hidden rounded-lg shadow-md">
+        <img src="https://klike.net/uploads/posts/2018-12/1544425332_28.jpg" alt="Image" class="w-full">
+      </div>
+      <div class="overflow-hidden rounded-lg shadow-md">
+        <img src="https://klike.net/uploads/posts/2018-12/1544425265_9.jpg" alt="Image" class="w-full">
+      </div>
+      <div class="overflow-hidden rounded-lg shadow-md">
+        <img src="https://klike.net/uploads/posts/2018-12/1544425312_18.jpg" alt="Image" class="w-full">
       </div>
     </div>
+  </section>
 
-    <!-- Форма зворотнього зв'язку -->
-    <div class="mt-8 p-6 bg-gray-100 rounded-lg">
-      <h2 class="text-xl font-bold mb-4">Зворотній зв'язок</h2>
-      <form>
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Ім'я</label>
-          <input class="border-2 border-gray-200 p-2 w-full rounded-md focus:outline-none focus:border-blue-500"
-            type="text" id="name" name="name">
-        </div>
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
-          <input class="border-2 border-gray-200 p-2 w-full rounded-md focus:outline-none focus:border-blue-500"
-            type="email" id="email" name="email">
-        </div>
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Повідомлення</label>
-          <textarea class="border-2 border-gray-200 p-2 w-full rounded-md focus:outline-none focus:border-blue-500"
-            id="message" name="message"></textarea>
-        </div>
-        <button
-          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-          type="submit">Надіслати</button>
-      </form>
-    </div>
-
-  </div>
+  <section class="bg-gray-200 p-8 rounded-lg shadow-md mb-8">
+    <!-- Контактна форма або інший контент -->
+  </section>
 
   <!-- Підвал -->
   <footer class="bg-gray-800 text-white p-4 mt-auto">
